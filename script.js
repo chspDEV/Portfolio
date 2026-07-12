@@ -94,12 +94,13 @@ setTimeout(() => {
 function loadGithubRepos() {
     const reposContainer = document.getElementById('repos-container');
     if (reposContainer) {
-        fetch('https://api.github.com/users/chspDEV/repos?sort=updated&per_page=6')
+        fetch('https://api.github.com/users/chspDEV/repos?sort=updated&per_page=10')
             .then(response => response.json())
             .then(repos => {
                 reposContainer.innerHTML = ''; // clear loading text
                 
-                const myRepos = repos.filter(repo => !repo.fork).slice(0, 6);
+                const ignoredRepos = ['portfolio', 'chspdev'];
+                const myRepos = repos.filter(repo => !repo.fork && !ignoredRepos.includes(repo.name.toLowerCase())).slice(0, 6);
                 
                 if (myRepos.length === 0) {
                     const noReposText = typeof translations !== 'undefined' ? (currentLang === 'en' ? 'No repositories found.' : 'Nenhum repositório encontrado no momento.') : 'No repos.';
