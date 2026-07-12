@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto - Portfólio</title>
+    <meta name="description" content="Detalhes sobre o jogo">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .project-hero { padding-top: 8rem; text-align: center; min-height: 100vh; }
+        .project-cover { width: 100%; max-width: 800px; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.8); margin-bottom: 3rem; border: 1px solid var(--card-border); }
+        .project-details { max-width: 800px; margin: 0 auto; text-align: left; font-size: 1.1rem; color: var(--text-secondary); }
+        .project-details h3 { color: var(--text-primary); margin-top: 2rem; margin-bottom: 1rem; font-size: 1.5rem; }
+        .back-btn { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--text-secondary); font-weight: 600; margin-bottom: 2rem; transition: var(--transition); }
+        .back-btn:hover { color: var(--accent); transform: translateX(-5px); }
+        .action-btns { margin-top: 3rem; display: flex; gap: 1rem; justify-content: center; }
+        #loading-state { text-align: center; color: var(--text-secondary); font-size: 1.2rem; margin-top: 5rem; }
+        #project-content { display: none; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container nav-content">
+            <a href="index.html" class="logo">chspDEV<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html#projects" data-i18n="nav_back_projects">Voltar aos Projetos</a></li>
+                <li><button id="lang-toggle" class="lang-btn">EN / PT</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class="container">
+            <a href="index.html#projects" class="back-btn"><i class='bx bx-left-arrow-alt'></i> <span data-i18n="btn_back">Voltar</span></a>
+            
+            <div id="loading-state" data-i18n="loading_proj">Carregando detalhes do projeto...</div>
+
+            <div id="project-content">
+                <h1 class="reveal" id="proj-title">Título</h1>
+                <p class="greeting reveal" id="proj-period" style="margin-bottom: 2rem;">Período</p>
+
+                <img id="proj-image" src="" alt="Capa do Jogo" class="project-cover reveal">
+
+                <div class="project-details reveal">
+                    <p id="proj-intro">Introdução</p>
+
+                    <h3 data-i18n="proj_exp_title">Minha Experiência e Desafios</h3>
+                    <p id="proj-exp">Experiência</p>
+
+                    <h3 data-i18n="proj_learn_title">O que aprendi</h3>
+                    <p id="proj-learn">Aprendizados</p>
+
+                    <div class="action-btns">
+                        <a id="proj-link" href="#" target="_blank" class="btn btn-primary">
+                            <i class='bx bx-joystick'></i> <span data-i18n="btn_play_itch">Jogar no Itch.io</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="error-state" style="display: none; margin-top: 5rem; color: #ef4444;">
+                <h2 data-i18n="error_proj">Erro: Projeto não encontrado!</h2>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container"><p data-i18n="footer_rights">© 2026 Carlos Henrique de Souza Pinto. Todos os direitos reservados.</p></div>
+    </footer>
+    <script src="data/lang.js"></script>
+    <script src="data/projects.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

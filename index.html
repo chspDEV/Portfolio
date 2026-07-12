@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Henrique - Desenvolvedor de Jogos</title>
+    <meta name="description" content="Portfólio de Carlos Henrique de Souza Pinto, Desenvolvedor de Jogos especializado em Unity e C#.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons for elegant icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="container nav-content">
+            <a href="#" class="logo">chspDEV<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about" data-i18n="nav_about">Sobre</a></li>
+                <li><a href="#projects" data-i18n="nav_projects">Projetos</a></li>
+                <li><a href="#experience" data-i18n="nav_experience">Experiência</a></li>
+                <li><button id="lang-toggle" class="lang-btn">EN / PT</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <p class="greeting reveal" data-i18n="hero_greeting">Olá, eu sou</p>
+            <h1 class="reveal">Carlos Henrique <span>de Souza Pinto</span></h1>
+            <h3 class="reveal" data-i18n="hero_role">Desenvolvedor de Jogos</h3>
+            <p class="hero-text reveal" data-i18n="hero_desc">
+                Apaixonado por criar experiências imersivas e interessantes. Especializado em Unity e C#, 
+                com sólida base em programação e design de jogos.
+            </p>
+            <div class="btn-group reveal">
+                <a href="#projects" class="btn btn-primary">
+                    <i class='bx bx-play-circle'></i> <span data-i18n="btn_projects">Ver Projetos</span>
+                </a>
+                <a href="https://github.com/chspDEV" target="_blank" class="btn btn-secondary">
+                    <i class='bx bxl-github'></i> GitHub
+                </a>
+                <a href="https://carlosbobao.itch.io/" target="_blank" class="btn btn-secondary">
+                    <i class='bx bx-joystick'></i> Itch.io
+                </a>
+                <a href="https://www.linkedin.com/in/carlos-henrique-de-souza-pinto-04412b254/" target="_blank" class="btn btn-secondary">
+                    <i class='bx bxl-linkedin'></i> LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="reveal" data-i18n="title_about">Sobre Mim</h2>
+            <div class="about-grid">
+                <div class="about-profile reveal">
+                    <img src="assets/profile.jpg" alt="Carlos Henrique" class="profile-img">
+                </div>
+                <div class="about-text reveal">
+                    <p data-i18n="about_p1">
+                        Sou um Desenvolvedor de Jogos com foco em programação, entusiasta e dedicado a aprender e utilizar as tecnologias mais eficientes para o cumprimento de tarefas. 
+                    </p>
+                    <p data-i18n="about_p2">
+                        Possuo forte capacidade de resolver problemas complexos e inexplorados, sempre com uma abordagem analítica e persistente, demonstrando adaptabilidade e comprometimento com a qualidade de cada projeto. 
+                        Atualmente cursando Tecnólogo em Jogos Digitais no IFRJ - Campus Eng. Paulo de Frontin.
+                    </p>
+                </div>
+                <div class="skills-container reveal">
+                    <h3 data-i18n="title_skills">Habilidades Técnicas</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Unity</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Game Design</span>
+                        <span class="skill-tag">Sound Design</span>
+                        <span class="skill-tag" data-i18n="skill_editing">Edição de Vídeo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="reveal" data-i18n="title_games">Meus Jogos</h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card reveal">
+                    <img src="assets/cafe-do-vale_real.jpg" alt="Café do Vale" class="project-img">
+                    <div class="project-info">
+                        <h3>Café do Vale</h3>
+                        <p data-i18n="proj_cafe_desc">Um jogo sobre a história do Vale do Café. Atuei como Programador e Game Designer desenvolvendo as mecânicas centrais e fluxo narrativo.</p>
+                        <a href="project.html?id=cafe-do-vale" class="project-link">
+                            <span data-i18n="btn_details">Ver Detalhes</span> <i class='bx bx-right-arrow-alt'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal">
+                    <img src="assets/capi_real.jpg" alt="C.A.P.I" class="project-img">
+                    <div class="project-info">
+                        <h3>C.A.P.I</h3>
+                        <p data-i18n="proj_capi_desc">Desenvolvido para a Game Jam IPChallenge (SEBRAE E INPI). Atuei como Programador Assistente, auxiliando na implementação de sistemas core.</p>
+                        <a href="project.html?id=capi" class="project-link">
+                            <span data-i18n="btn_details">Ver Detalhes</span> <i class='bx bx-right-arrow-alt'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal">
+                    <img src="assets/sustentpolis_real.jpg" alt="Sustentópolis" class="project-img">
+                    <div class="project-info">
+                        <h3>Sustentópolis</h3>
+                        <p data-i18n="proj_sustentopolis_desc">Projeto focado em mecânicas inovadoras e conscientização, criado com paixão pelo Game Design e desafios técnicos de programação.</p>
+                        <a href="project.html?id=sustentopolis" class="project-link">
+                            <span data-i18n="btn_details">Ver Detalhes</span> <i class='bx bx-right-arrow-alt'></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Games Section -->
+    <section id="other-games">
+        <div class="container">
+            <h2 class="reveal" data-i18n="title_other_games">Outros Projetos (Itch.io)</h2>
+            <div class="other-games-grid reveal" id="other-games-container">
+                <a href="https://carlosbobao.itch.io/dontwalkoutside" target="_blank" class="other-game-tag">DON'T WALK OUTSIDE</a>
+                <a href="https://clau1801dinho.itch.io/the-flame-within" target="_blank" class="other-game-tag">The Flame Within</a>
+                <a href="https://stuart-manfro.itch.io/die-die-dice" target="_blank" class="other-game-tag">Die Die Dice</a>
+                <a href="https://vitor-gomes.itch.io/eliwaka" target="_blank" class="other-game-tag">Eliwaka</a>
+                <a href="https://carlosbobao.itch.io/tcpi-pooro" target="_blank" class="other-game-tag">TCP1 - Tome cuidado Pooro!</a>
+                <a href="https://carlosbobao.itch.io/pkm-rby" target="_blank" class="other-game-tag">TCP2 - Pokémon RBY</a>
+                <a href="https://carlosbobao.itch.io/lost-in-sundown" target="_blank" class="other-game-tag">TCP3 - Lost In Sundown</a>
+                <a href="https://artmreis.itch.io/tcp4-cafe-do-vale" target="_blank" class="other-game-tag">TCP4 - Café do Vale</a>
+                <a href="https://carlosbobao.itch.io/duck-tournament" target="_blank" class="other-game-tag">Duck Tournament</a>
+                <a href="https://carlosbobao.itch.io/signal-sound-manager" target="_blank" class="other-game-tag">Signal Audio Manager</a>
+                <a href="https://minatocruz.itch.io/regras-de-newton" target="_blank" class="other-game-tag">Regras de Newton</a>
+                <a href="https://carlosbobao.itch.io/addoa2" target="_blank" class="other-game-tag">A.D.D.O.A II</a>
+                <a href="https://eugenio-gonzalez.itch.io/toby-o-ratinho-de-laboratorio" target="_blank" class="other-game-tag">Toby: o Ratinho</a>
+                <a href="https://artur-pontes.itch.io/dddev" target="_blank" class="other-game-tag">dd.dev!</a>
+                <a href="https://carlosbobao.itch.io/rebone" target="_blank" class="other-game-tag">Rebone</a>
+                <a href="https://carlosbobao.itch.io/frogs-day" target="_blank" class="other-game-tag">Frog's Day</a>
+                <a href="https://carlosbobao.itch.io/flappybat" target="_blank" class="other-game-tag">Flappy Bat</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Repositories Section -->
+    <section id="github-repos">
+        <div class="container">
+            <h2 class="reveal" data-i18n="title_github">Projetos de Estudo (GitHub)</h2>
+            <div class="repos-grid reveal" id="repos-container">
+                <p class="loading-text" data-i18n="loading_repos">Carregando repositórios...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="reveal" data-i18n="title_experience">Trajetória</h2>
+            <div class="timeline">
+                
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025 - Hoje</div>
+                        <h3 class="timeline-title" data-i18n="exp1_role">Programador e Game Designer solo</h3>
+                        <div class="timeline-company" data-i18n="exp1_comp">JOGO DIGITAL PARA ENSINO DE SUPORTE BÁSICO DE VIDA</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - 2025</div>
+                        <h3 class="timeline-title" data-i18n="exp2_role">Programador e Game Designer</h3>
+                        <div class="timeline-company" data-i18n="exp2_comp">Café do Vale</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - Hoje</div>
+                        <h3 class="timeline-title" data-i18n="exp3_role">Tecnólogo em Jogos Digitais</h3>
+                        <div class="timeline-company" data-i18n="exp3_comp">IFRJ - Campus Eng. Paulo de Frontin</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023</div>
+                        <h3 class="timeline-title" data-i18n="exp4_role">Programador Assistente</h3>
+                        <div class="timeline-company" data-i18n="exp4_comp">C.A.P.I - Game Jam IPChallenge</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-socials reveal">
+                <a href="https://github.com/chspDEV" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://carlosbobao.itch.io/" target="_blank"><i class='bx bx-joystick'></i></a>
+                <a href="https://www.linkedin.com/in/carlos-henrique-de-souza-pinto-04412b254/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="mailto:chspcontato@gmail.com"><i class='bx bx-envelope'></i></a>
+            </div>
+            <p class="reveal" data-i18n="footer_rights">© 2026 Carlos Henrique de Souza Pinto. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="data/lang.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
