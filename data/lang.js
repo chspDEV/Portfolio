@@ -31,6 +31,8 @@ const translations = {
         "exp3_comp": "IFRJ - Eng. Paulo de Frontin Campus",
         "exp4_role": "Assistant Programmer",
         "exp4_comp": "C.A.P.I - Game Jam IPChallenge",
+        "contact_email": "Email:",
+        "contact_discord": "Discord:",
         "footer_rights": "© 2026 Carlos Henrique de Souza Pinto. All rights reserved.",
         
         "nav_back_projects": "Back to Projects",
@@ -73,6 +75,8 @@ const translations = {
         "exp3_comp": "IFRJ - Campus Eng. Paulo de Frontin",
         "exp4_role": "Programador Assistente",
         "exp4_comp": "C.A.P.I - Game Jam IPChallenge",
+        "contact_email": "E-mail:",
+        "contact_discord": "Discord:",
         "footer_rights": "© 2026 Carlos Henrique de Souza Pinto. Todos os direitos reservados.",
         
         "nav_back_projects": "Voltar aos Projetos",
